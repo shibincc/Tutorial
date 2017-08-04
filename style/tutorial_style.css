@@ -32,7 +32,7 @@ body{
 .tut-launch-container .btn.focus, 
 .tut-launch-container .btn:focus, 
 .tut-launch-container .btn:hover{
-	color: #ce43e3 !important; 
+	color: #e34343 !important; 
 }
 .tut-full-size{
 	height: 100%;
@@ -110,7 +110,7 @@ body{
 
 }
 .tut-launch-container .tut-start-page .tut-btn.tut-btn-primary{
-	background: #ce43e3;
+	background: #e34343;
 	color: #FFF;
 }
 .tut-launch-container .tut-start-page .tut-btn.tut-btn-primary:hover{
@@ -165,7 +165,7 @@ body{
 .tut-nav-link{
 	background: transparent;
 	width: 60px;
-	color: #ce43e3;
+	color: #e34343;
 	position: relative;
     top: 20px;
     cursor: pointer;
@@ -195,7 +195,7 @@ body{
 	padding-right:35px; 
 }
 .tut-step-title{
-	color: #ce43e3;
+	color: #e34343;
 	font-weight: 600;
 	font-size: 1.3em;
 	width: 100%;
@@ -263,7 +263,7 @@ body{
 	margin-right: 2px;
 }
 .tut-step-indicator.active{
-	color: #ce43e3;
+	color: #e34343;
 }
 .tut-step-indicator-holder{
 	position: relative;
