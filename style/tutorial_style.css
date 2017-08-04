@@ -1,0 +1,303 @@
+html,body{
+	height: 100%;
+}
+body{
+	font : normal 16px Roboto,Arial,Helvetica,sans-serif;
+	background: #EFEFEF;
+}
+
+.container{
+	background: #fff;
+	height: calc(100% - 60px);
+	padding: 0;
+}
+.navbar-default{
+	margin-bottom: 4px;
+}
+.display-none{
+	display: none
+}
+#launcher{
+	height: 100%
+}
+.tut-launch-container *,
+.tut-launch-container *:hover,
+.tut-launch-container *:focus,
+.tut-launch-container *:active{
+	outline: none !important;
+}
+.tut-launch-container button:active{
+	box-shadow: none !important;
+}
+.tut-launch-container .btn.focus, 
+.tut-launch-container .btn:focus, 
+.tut-launch-container .btn:hover{
+	color: #ce43e3 !important; 
+}
+.tut-full-size{
+	height: 100%;
+	width: 100%;
+}
+.tut-launch-container{
+	font-size: 16px;
+	position: relative;
+	z-index: 0;
+	background:rgba(0, 0, 0, 0.2);
+}
+.tut-launch-container-inner{
+	position: absolute;
+	height: 100%;	
+	max-width: 480px !important;
+	margin: auto;
+	background: #fff;
+	z-index: 1;
+	top:0;
+	bottom: 0;
+	left:0;
+	right: 0;
+	max-height: 780px;
+}
+@media screen and (max-width: 480px) {
+     /* start of phone styles */
+     .tut-launch-container-inner{
+		width: 100%;     	
+     }
+
+}
+.tut-launch-container .tut-start-page{
+	z-index: 0;
+
+}
+.tut-content-container{
+	padding: 0px 30px;	
+}
+.tut-content-container p{
+	font-size: 1.125em;
+
+}
+.tut-btn-container{
+	padding:20px;	
+}
+.tut-launch-container .tut-start-page .tut-background{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin:auto;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+
+}
+.tut-launch-container .tut-btn{
+	height: 50px;
+    width: 155px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.tut-btn-container{
+	position: absolute;
+    bottom: 0; 
+    width: 100%;  
+}
+
+/*strt page*/
+.tut-launch-container .tut-start-page .tut-btn{
+	font-size: .91em;
+	cursor: pointer;
+
+}
+.tut-launch-container .tut-start-page .tut-btn.tut-btn-primary{
+	background: #ce43e3;
+	color: #FFF;
+}
+.tut-launch-container .tut-start-page .tut-btn.tut-btn-primary:hover{
+	background: #b835cc;
+	color: #FFF !important;
+}
+.tut-launch-container .tut-start-page .tut-btn.tut-btn-default{
+	background: #fff;
+	color: #AAA;
+}
+
+.tut-launch-container .tut-start-page .tut-btn.tut-btn-default:hover{
+	background: #eae8e8;
+	color: #AAA !important;
+}
+
+.tut-start-page .tut-header{
+	color: #92ce21;
+	font-weight: 600;
+	margin-bottom: 25px;
+	padding-top: 45px;
+}
+.tut-start-page .tut-header .tut-title{
+	padding: 5px
+}
+.tut-start-page .tut-header .tut-subtitle{
+	padding: 5px
+}
+.tut-start-page .tut-des{
+	color: #fff;
+	font-weight: 300;
+	line-height: 1.5;
+}
+
+.tut-start-page .tut-btn-container{
+	position: absolute;
+    bottom: 0;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+}
+.tut-start-page .tut-btn:first-child{
+	margin-right: 8px;
+}
+
+@media screen and (max-width: 350px){
+	.tut-launch-container .tut-btn{
+	    width: 140px;
+	}
+}
+/*tut steps*/
+.tut-nav-link{
+	background: transparent;
+	width: 60px;
+	color: #ce43e3;
+	position: relative;
+    top: 20px;
+    cursor: pointer;
+}
+.tut-nav-link[disabled],.tut-nav-link.disabled{
+	color: #aaa
+
+}
+.tut-nav-link i{
+	font-size: 42px;
+	font-weight: 600;
+
+}
+.tut-nav-link:hover,{
+	font-size: 42px;
+	font-weight: 600;
+
+}
+.tut-btn-container .tut-nav-link:first-child i{
+	position: relative;
+    left: -9px;
+}
+
+.tut-step-header{
+	width:100%;
+	padding-left:35px; 
+	padding-right:35px; 
+}
+.tut-step-title{
+	color: #ce43e3;
+	font-weight: 600;
+	font-size: 1.3em;
+	width: 100%;
+	text-align: center;
+}
+.tut-close-btn{
+	padding:20px 0px;
+	position: relative;
+	left:20px;
+	cursor:pointer;
+}
+.tut-close-btn i{
+	font-size: 30px;
+}
+.tut-step-image{
+	height: 65%;
+	padding:25px 50px;
+	width: 100%;
+}
+.tut-step-image .tut-img-holder{
+	height: 100%;
+	background:#EEE;
+	width: 100%;
+	padding:50px;
+}
+.tut-step-image .tut-img-holder img{
+	height: 100%;
+	width: 100%;
+}
+.tut-step-des{
+	padding: 20px 35px;
+}
+.tut-step-des p{
+	line-height: 1.5;
+	font-size: 1em;
+}
+.tut-step-info{
+	height: calc(100% - 65px);
+	overflow-y: auto;
+}
+
+
+.tut-step-info::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+/* Track */
+.tut-step-info::-webkit-scrollbar-track {
+	width: 2px;
+}
+ 
+/* Handle */
+.tut-step-info::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    width: 2px;   
+}
+.tut-step-info::-webkit-scrollbar-thumb:window-inactive {
+	background: #eee; 
+    width: 2px;   
+}
+.tut-step-indicator{
+	font-size: 10px;
+	color:#aaa;
+	margin-right: 2px;
+}
+.tut-step-indicator.active{
+	color: #ce43e3;
+}
+.tut-step-indicator-holder{
+	position: relative;
+    top: 38px;
+}
+.tut-steps .tut-btn-container{
+	text-align: center;
+}
+
+
+
+.ripple {
+  position: relative;
+  overflow: hidden;
+}
+.ripple:after {
+  content: "";
+  background: rgba(255, 255, 255, 0.3);
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  padding-top: 240%;
+  padding-left: 240%;
+  margin-top: -120%;
+  margin-left: -120%;
+  opacity: 0;
+  transition: all 1s;
+}
+.ripple:active:after {
+  padding-top: 0;
+  padding-left: 0;
+  margin-top: 0;
+  margin-left: 0;
+  opacity: 1;
+  transition: 0s;
+}
+

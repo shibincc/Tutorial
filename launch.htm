@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tutorial</title>
+	<meta charset="utf-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,600,700" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="ext/bootstrap-3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="ext/font-awesome/css/font-awesome.min.css">
+    <link href="style/tutorial_style.css" rel="stylesheet">
+
+    <script type="text/javascript" src="ext/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="ext/bootstrap-3.3.4/js/bootstrap.min.js" defer></script>
+
+    <script type="text/javascript" src="js/lib/tutorial_lib.js"></script>
+    <script type="text/javascript" src="demo/data.js"></script>
+    <script type="text/javascript" src="demo/testfiles.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">               
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div id="launcher"></div>
+        <div id="launcher2"></div>
+        
+    </div>
+</body>
+<script type="text/html" id="tut-tpl">
+    <div class="tut-launch-container tut-full-size" data-name="tut-container">
+            <div class="tut-launch-container-inner">
+                <div class="tut-start-page tut-full-size display-none" data-name="initial">
+                    <img data-name="stepImage" src="{{stepImage}}" class="tut-background tut-full-size">
+                   
+                    <div class="tut-header tut-content-container">
+                        <div class="tut-title" data-name="title">{{title}}</div>
+                        <div class="tut-subtitle" data-name="subtitle">{{subtitle}}</div>
+                    </div>
+                    <div class="tut-des tut-content-container" data-name="description">
+                       {{description}}
+                    </div>
+                    <div class="tut-btn-container">                    
+                        <button class="btn tut-btn tut-btn-default ripple" data-name="skip">SKIP</button>
+                        <button class="btn tut-btn tut-btn-primary ripple" data-name="start">LET'S START</button>
+                    </div>
+                </div>
+                <div class="tut-steps tut-full-size display-none" data-name="actual">
+                    <div class="tut-step-info">
+                        <div class="tut-step-header">
+                            <div class="tut-close-btn pull-right" data-name="close"><i class="material-icons">close</i></div>
+                            <div class="clearfix"></div>
+                            <div class="tut-step-title" data-name="title">{{stepTitle}}</div>
+                        </div>
+                        <div class="tut-step-image">
+                            <div class="tut-img-holder">
+                                <img data-name="stepImage" src="{{stepImage}}">
+                            </div>
+                        </div>
+                        <div class="tut-step-des">
+                            <p data-name="description">
+                               {{description}}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tut-btn-container"> 
+                        <button class="btn tut-nav-link pull-left" data-name="previous"><i class="material-icons">arrow_backward</i></button>
+                        <span class="tut-step-indicator-holder" data-name="step-indicator-holder">
+                           <!--  <i class="material-icons tut-step-indicator">lens</i>
+                           <i class="material-icons tut-step-indicator active">lens</i>
+                           <i class="material-icons tut-step-indicator">lens</i> -->
+                        </span>
+                        <button class="btn tut-nav-link pull-right" data-name="next"><i class="material-icons">arrow_forward</i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+</script>
+</html>

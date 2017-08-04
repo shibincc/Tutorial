@@ -1,0 +1,22 @@
+html,body{
+	height: 100%;
+}
+body{
+	font : normal 16px Roboto,Arial,Helvetica,sans-serif;
+	background: #EFEFEF;
+}
+
+.container{
+	background: #fff;
+	height: calc(100% - 60px);
+	padding: 0;
+}
+.navbar-default{
+	margin-bottom: 4px;
+}
+.display-none{
+	display: none
+}
+#launcher{
+	height: 100%
+}
